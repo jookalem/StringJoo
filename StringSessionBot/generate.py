@@ -47,7 +47,7 @@ async def generate_session(bot, msg, telethon=False):
     try:
         api_id = int(api_id_msg.text)
     except ValueError:
-        await api_id_msg.reply('API_ID ᴛɪᴅᴀᴋ ʙᴇɴᴀʀ. ᴍᴏʜᴏɴ ᴀᴍʙɪʟ sᴛʀɪɴɢ ᴜʟᴀɴɢ.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await api_id_msg.reply('API_ID` ᴛɪᴅᴀᴋ ʙᴇɴᴀʀ. ᴍᴏʜᴏɴ ᴀᴍʙɪʟ sᴛʀɪɴɢ ᴜʟᴀɴɢ.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     api_hash_msg = await bot.ask(user_id, 'sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ `API_HASH`', filters=filters.text)
     if await cancelled(api_id_msg):
@@ -57,7 +57,7 @@ async def generate_session(bot, msg, telethon=False):
     if await cancelled(api_id_msg):
         return
     phone_number = phone_number_msg.text
-    await msg.reply("Sending OTP...")
+    await msg.reply("ᴍᴇɴɢɪʀɪᴍ ᴏᴛᴘ..")
     if telethon:
         client = TelegramClient(StringSession(), api_id, api_hash)
     else:
@@ -69,7 +69,7 @@ async def generate_session(bot, msg, telethon=False):
         else:
             code = await client.send_code(phone_number)
     except (ApiIdInvalid, ApiIdInvalidError):
-        await msg.reply('`API_ID` and `API_HASH` combination is invalid. Please start generating session again.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await msg.reply('`API_ID` ᴅᴀɴ `API_HASH` ᴛɪᴅᴀᴋ ʙᴇɴᴀʀ. ᴍᴏʜᴏɴ ᴀᴍʙɪʟ sᴛʀɪɴɢ ᴜʟᴀɴɢ', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     except (PhoneNumberInvalid, PhoneNumberInvalidError):
         await msg.reply('`PHONE_NUMBER` sᴀʟᴀʜ. ᴍᴏʜᴏɴ ᴀᴍʙɪʟ sᴛʀɪɴɢ ᴜʟᴀɴɢ.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
