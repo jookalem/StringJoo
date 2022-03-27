@@ -4,16 +4,16 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Halo {}
+ʜᴀʟᴏ ɴɢᴇɴᴛᴏᴅ 😈 {}
 
-Selamat datang {}
+ᴡᴇʟᴋᴀᴍ 🤗 {}
 
-Jika kamu tidak percaya bot ini, 
-1) gausah baca pesan ini
-2) blokir bot atau delete chat
+ᴊɪᴋᴀ ᴋᴀᴍᴜ ᴛɪᴅᴀᴋ ᴍᴇᴍᴘᴇʀᴄᴀʏᴀɪ ʙᴏᴛ ɪɴɪ, 
+𝟷> ɢᴀᴜsᴀ ʙᴀᴄᴀ ᴄʜᴀᴛ ɪɴɪ ʙɢᴇɴᴛᴏᴅ
+𝟷> ʙʟᴏᴋɪʀ ʙᴏᴛ ᴀᴛᴀᴜ ᴅᴇʟᴇᴛᴇ ᴄʜᴀᴛ ɴɢᴇɴᴛᴏᴅ
 
-Bot ini Bekerja Untuk Membantu Kamu Mendapatkan String Session Via Bot. Rekomendasi Jika Ingin Mengambil String Gunakan Akun Lain, Agar Tidak Delay. Terimakasih
-By @IDnyaKosong
+ʙᴏᴛ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀɴᴛᴜ ᴋᴀᴍᴜ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ sᴛʀɪɴɢ sᴇssɪᴏɴ ᴠɪᴀ ʙᴏᴛ. ʀᴇᴋᴏᴍᴇɴᴅᴀsɪ ᴊɪᴋᴀ ɪɴɢɪɴ ᴍᴇɴɢᴀᴍʙɪʟ sᴛʀɪɴɢ ɢᴜɴᴀᴋᴀɴ ᴀᴋᴜɴ ʟᴀɪɴ, ᴀɢᴀʀ ᴛɪᴅᴀᴋ ᴅᴇʟᴀʏ. ᴛᴇʀɪᴍᴀᴋᴀsɪʜ
+ʙʏ @ikhsanntarjo
     """
 
     # Home Button
@@ -29,37 +29,37 @@ By @IDnyaKosong
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("🔥 sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ 🔥", callback_data="generate")],
-        [InlineKeyboardButton("ᴍᴀɪɴᴛᴀɴᴇᴅ ʙʏ", url="https://t.me/IDnyaKosong")],
+        [InlineKeyboardButton("ᴍᴀɪɴᴛᴀɴᴇᴅ ʙʏ", url="https://t.me/ikhsanntarjo")],
         [
-            InlineKeyboardButton("ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ ❔", callback_data="help"),
+            InlineKeyboardButton("ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ", callback_data="help"),
             InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about")
         ],
-        [InlineKeyboardButton("ɪɴғᴏ ʙᴏᴛ ʟᴀɪɴ", url="https://t.me/NastySupportt")],
+        [InlineKeyboardButton("ɪɴғᴏ ʙᴏᴛ ʟᴀɪɴ", url="https://t.me/JoniSupport")],
     ]
 
     # Help Message
     HELP = """
-✨ **Available Commands** ✨
+✪ **Available Commands** ✪
 
-/about - Tentang Bot ini
-/help - This Message
-/start - Mulai Bot
-/generate - Mulai Generating Session
-/cancel - Membatalkan process
-/restart - Membatalkan process
+/about - ᴛᴇɴᴛᴀɴɢ ʙᴏᴛ ɪɴɪ
+/help - ʙᴀɴᴛᴜᴀɴ
+/start - ᴍᴜʟᴀɪ ʙᴏᴛ
+/generate - ᴍᴜʟᴀɪ ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ
+/cancel - ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏsᴇs
+/restart - ᴍᴇᴍʙᴀᴛᴀʟᴋᴀɴ ᴘʀᴏsᴇs
 """
 
     # About Message
     ABOUT = """
-**About This Bot** 
+✪ **About This Bot** ✪
 
-Sebuah telegram bot untuk mengambil pyrogram dan telethon string session by @NastyStringbot
+sᴇʙᴜᴀʜ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴍʙɪʟ ᴘʏʀᴏɢʀᴀᴍ ᴅᴀɴ ᴛᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴ ʙʏ @joostringbot
 
-Group Support : [ɢᴀʙᴜɴɢ](https://t.me/NastySupportt)
+Group Support : [ɢᴀʙᴜɴɢ](https://t.me/JoniSupport)
 
-Framework : [Pyrogram](docs.pyrogram.org)
+Framework : [ᴘʏʀᴏɢʀᴀᴍ](docs.pyrogram.org)
 
-Language : [Python](www.python.org)
+Language : [ᴘʏᴛʜᴏɴ](www.python.org)
 
-Developer : @IDnyaKosong
+Developer : @ikhsanntarjo
     """
