@@ -4,9 +4,9 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-ʜᴀʟᴏ ɴɢᴇɴᴛᴏᴅ 😈 {}
+ʜᴀʟᴏ ɴɢᴇɴᴛᴏᴅ {} 😈
 
-ᴡᴇʟᴋᴀᴍ 🤗 {}
+ᴡᴇʟᴋᴀᴍ  {} 🤗
 
 ᴊɪᴋᴀ ᴋᴀᴍᴜ ᴛɪᴅᴀᴋ ᴍᴇᴍᴘᴇʀᴄᴀʏᴀɪ ʙᴏᴛ ɪɴɪ, 
 𝟷> ɢᴀᴜsᴀ ʙᴀᴄᴀ ᴄʜᴀᴛ ɪɴɪ ʙɢᴇɴᴛᴏᴅ
@@ -18,17 +18,17 @@ class Data:
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔥 sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ 🔥", callback_data="generate")],
+        [InlineKeyboardButton("🔥 ᴍᴜʟᴀɪ sᴛʀɪɴɢ sᴇssɪᴏɴ 🔥", callback_data="generate")],
         [InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="home")]
     ]
 
     generate_button = [
-        [InlineKeyboardButton("🔥 sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ 🔥", callback_data="generate")]
+        [InlineKeyboardButton("🔥 ᴍᴜʟᴀɪ sᴛʀɪɴɢ sᴇssɪᴏɴ 🔥", callback_data="generate")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🔥 sᴛᴀʀᴛ ɢᴇɴᴇʀᴀᴛɪɴɢ sᴇssɪᴏɴ 🔥", callback_data="generate")],
+        [InlineKeyboardButton("🔥 ᴍᴜʟᴀɪ sᴛʀɪɴɢ sᴇssɪᴏɴ 🔥", callback_data="generate")],
         [InlineKeyboardButton("ᴍᴀɪɴᴛᴀɴᴇᴅ ʙʏ", url="https://t.me/ikhsanntarjo")],
         [
             InlineKeyboardButton("ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ sᴀʏᴀ", callback_data="help"),
