@@ -22,7 +22,7 @@ from telethon.errors import (
 )
 
 ERROR_MESSAGE = "Oops! An exception occurred! \n\n**Error** : {} " \
-            "\n\nTolong Laporan ke [Support](t.me/NastySupportt) jika eror " \
+            "\n\nTolong Laporan ke [Support](t.me/JoniSupport) jika eror " \
             "sensitive information and you if want to report this as " \
             "this error message is not being logged by us!"
 
@@ -39,7 +39,7 @@ async def main(_, msg):
 
 
 async def generate_session(bot, msg, telethon=False):
-    await msg.reply("ᴍᴇᴍᴜʟᴀɪ {} sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛɪᴘɴ...".format("Telethon" if telethon else "Pyrogram"))
+    await msg.reply("ᴍᴇᴍᴜʟᴀɪ {} sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛɪᴏɴ...".format("ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴘʏʀᴏɢʀᴀᴍ"))
     user_id = msg.chat.id
     api_id_msg = await bot.ask(user_id, 'sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ  `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
@@ -47,7 +47,7 @@ async def generate_session(bot, msg, telethon=False):
     try:
         api_id = int(api_id_msg.text)
     except ValueError:
-        await api_id_msg.reply('API_ID ᴛɪᴅᴀᴋ ʙᴇɴᴀʀ (which must be an integer). ᴍᴏʜᴏɴ ᴀᴍʙɪʟ sᴛʀɪɴɢ ᴜʟᴀɴɢ.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await api_id_msg.reply('API_ID ᴛɪᴅᴀᴋ ʙᴇɴᴀʀ. ᴍᴏʜᴏɴ ᴀᴍʙɪʟ sᴛʀɪɴɢ ᴜʟᴀɴɢ.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     api_hash_msg = await bot.ask(user_id, 'sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ `API_HASH`', filters=filters.text)
     if await cancelled(api_id_msg):
@@ -75,7 +75,7 @@ async def generate_session(bot, msg, telethon=False):
         await msg.reply('`PHONE_NUMBER` sᴀʟᴀʜ. ᴍᴏʜᴏɴ ᴀᴍʙɪʟ sᴛʀɪɴɢ ᴜʟᴀɴɢ.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
     try:
-        phone_code_msg = await bot.ask(user_id, "sɪʟᴀʜᴋᴀɴ ᴘᴇʀɪᴋsᴀ ᴋᴏᴅᴇ ᴏᴛᴘ ᴅɪ ᴀᴋᴜɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀɴᴅᴀ, ᴊɪᴋᴀ ᴀᴅᴀ, sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ ᴋᴏᴅᴇ ᴏᴛᴘ ᴋᴇ sɪɴɪ sᴇᴛᴇʟᴀʜ ᴍᴇᴍʙᴀᴄᴀ ғᴏʀᴍᴀᴛ ᴅɪʙᴀᴡᴀʜ ɪɴɪ. \nᴊɪᴋᴀ ᴋᴏᴅᴇ ᴏᴛᴘ ᴀᴅᴀʟᴀʜ 12345, sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ 1 2 3 4 5..", filters=filters.text, timeout=600)
+        phone_code_msg = await bot.ask(user_id, "sɪʟᴀʜʟᴀɴ ᴘᴇʀɪᴋsᴀ ᴋᴏᴅᴇ ᴏᴛᴘ ᴅɪ ᴀᴋᴜɴ ᴛᴇʟᴇɢʀᴀᴍ. ʟᴀʟᴜ ᴋɪʀɪᴍᴋᴀɴ ᴋᴏᴅᴇ ᴏᴛᴘ ᴋᴇ sɪɴɪ.. \nᴊɪᴋᴀ ᴋᴏᴅᴇ ᴏᴛᴘ ᴀᴅᴀʟᴀʜ 12345, sɪʟᴀʜᴋᴀɴ ᴋɪʀɪᴍ 1 2 3 4 5", filters=filters.text, timeout=600)
         if await cancelled(api_id_msg):
             return
     except TimeoutError:
